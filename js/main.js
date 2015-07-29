@@ -25,7 +25,9 @@ function main(){
 	listenerPanelToggle($('.soft_container'));
 	listenerPanelToggle($('.contact_container'));
 }	
-
+/*
+* It hides all the content
+*/
 function hideAll(){
 	$('.resume_content').hide();
 	$('.educ_container').hide();
@@ -36,7 +38,9 @@ function hideAll(){
 	$('.soft_container').hide();
 	$('.contact_container').hide();
 }
-
+/*
+* It hides the labels buttons menu and activates when are "hovered".
+*/
 function listenerMenuToggle() {
 	$('.list_label_return').hide();
 	$('.list_label_top').hide();
@@ -45,7 +49,6 @@ function listenerMenuToggle() {
 	$('.list_label_chart').hide();
 	$('.list_label_soft_skills').hide();
 	$('.list_label_contact').hide();
-
 	$('.list_icon_return').hover(function() {
   		$('.list_label_return').fadeToggle(1000, "swing");
 	});
@@ -68,7 +71,10 @@ function listenerMenuToggle() {
   		$('.list_label_contact').fadeToggle(1000, "swing");
 	});
 }
-
+/*
+* This function acts like a listener. When a section is active on the viewport it displays the content
+* and hides the section when it is off the viewport.
+*/
 function listenerPanelToggle(target){
 	target.bind('inview', function (event, visible) {
   		if (visible == true) {
