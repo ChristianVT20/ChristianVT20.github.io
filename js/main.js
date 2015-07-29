@@ -12,17 +12,13 @@ function main(){
 		scrollBar: true,
 		scrollingSpeed: 700
 	});
-	/*
-	* This section makes the "Fade In" effect on the first section.
-	*/
-	listenerMenuToggle();
-	$('#menu').fadeToggle(5000, "swing");
-	$('.resume_content').fadeToggle(5000, "swing");
-
 	
 	/*
 	* "Fade In" effect on sections
 	*/
+	listenerMenuToggle();
+	$('#menu').fadeToggle(5000, "swing");
+	$('.resume_content').fadeToggle(5000, "swing");
 	listenerPanelToggle($('.educ_container'));
 	listenerPanelToggle($('.skills_container'));
 	listenerPanelToggle($('.chart_container'));
