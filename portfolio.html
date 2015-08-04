@@ -2,53 +2,109 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Portafolio</title>
+	<title>Portfolio</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="css/portfolio.css">
+	<link rel="shortcut icon" href="images/c-logo.png"/>
+	<!-- _________________________________   CSS  _________________________________  -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/portfolio.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- _________________________________ Scripts ________________________________  -->
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/portfolio.js"></script>
+	<script src="js/fullpage.js"></script>
+	<script src="js/inview.js"></script>
+	
 </head>
 <body>
-	<div class='main container-fluid'>
-		<br>
-		<div class="row ">
-
-
-			<div class="row ">
-			<div class="col-xs-6 col-md-3 ">
-				<div class="thumbnail">
-					<img class="img-thumbnail img-responsive img-circle" src="http://lorempixel.com/400/200/sports/1" alt="">
-					<div class="caption">
-						<h3>Título <small>Autor</small></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis recusandae</p>
-						<a href="#" class="bt btn-warning right">Leer más...</a>
+	<div class=''>
+	<header>
+		<div class="title">
+			<h1>PORTFOLIO</h1>
+		</div>
+	</header>
+		<div class="right-panel">
+			<div class="right-content">
+				<div class="h2-wrapper">
+					<h2></h2>
+				</div>
+				<div class="content-wrapper">
+					<p></p>
+					<ul></ul>
+				</div>
+				<div class="resources">
+					<div class="demo">
+						
+					</div>
+					<div class="code">
+						<a href="" target="_blank"><h4>CODE</h4></a>
 					</div>
 				</div>
-			</div>
-			<div class="col-xs-6 col-md-3 ">
-				<div class="thumbnail">
-					<img class="img-thumbnail img-responsive img-circle" src="http://lorempixel.com/400/200/sports/2" alt="">
-					<div class="caption">
-						<h3>Título <small>Autor</small></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis recusandae</p>
-						<a href="#" class="bt btn-warning right">Leer más...</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-6 col-md-3 ">
-				<div class="thumbnail">
-					<img class="img-thumbnail img-responsive img-circle" src="http://lorempixel.com/400/200/sports/3" alt="">
-					<div class="caption">
-						<h3>Título <small>Autor</small></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis recusandae</p>
-						<a href="index.html" class="bt btn-warning right">Leer más...</a>
-					</div>
-				</div>
-			</div>
+			</div>	
+		</div>
 
+		<div id="fullpage">
+		    <section class="section game" data-anchor="game" id="section2">
+				<div class="panel-container">
+				    <div class="left-img backgrnd2">
+						<img class="" src="images/game.jpg" alt="">
+					</div>
+			    	<div class="left1 inViewport">
+		    		</div>
+			    </div>
+		    </section>
+		    <section class="section resume" data-anchor="resume" id="section2">
+		    	<div class="panel-container">
+		    		<div class="left-img backgrnd2">
+						<img class="" src="images/resume.jpg" alt="">
+					</div>
+			    	<div class="left2 inViewport">
+		    		</div>
+			    </div>
+		    </section>
+		    <section class="section prototype1" data-anchor="prototype1" id="section3">
+		    	<div class="panel-container">
+		    		<div class="left-img backgrnd3">
+						<img class="" src="images/aurora.jpg" alt="">
+					</div>
+			    	<div class="left3 inViewport">
+		    		</div>
+			    </div>
+		    </section>
+		    <section class="section prototype2" data-anchor="prototype2" id="section4">
+		    	<div class="panel-container">
+		    		<div class="left-img backgrnd4">
+						<img class="" src="images/olivo.jpg" alt="">
+					</div>
+			    	<div class="left4 inViewport">
+		    		</div>
+			    </div>
+		    </section>
+		    <section class="section prototype3" data-anchor="prototype3" id="section5">
+		    	<div class="panel-container">
+		    		<div class="left-img backgrnd5">
+						<img class="" src="images/blog.jpg" alt="">
+					</div>
+			    	<div class="left5 inViewport">
+		    		</div>
+			    </div>
+		    </section>
+		    <section class="section todo" data-anchor="todo" id="section6">
+		    	<div class="panel-container">
+		    		<div class="left-img backgrnd6">
+						<img class="" src="images/todo.jpg" alt="">
+					</div>
+			    	<div class="left6 inViewport">
+		    		</div>
+			    </div>
+		    </section>
 		</div>
 	</div>
-
-	<script src="http://code.jquery.com/jquery-latest.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<footer>
+		<div class="left-img scroll">
+			<img class="" src="images/scroll.png" alt="scroll" height="42" width="42">
+		</div>
+	</footer>
 </body>
 </html>
