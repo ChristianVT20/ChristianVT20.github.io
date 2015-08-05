@@ -1,0 +1,103 @@
+@font-face {
+  font-family: aileron-light;
+  src: url(../fonts/aileron/Aileron-Light.otf);}
+
+html,body {
+  margin: 0;
+  padding: 0;}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-family: aileron-light, helvetica;
+
+  /*BACKGROUND IMAGE*/
+  background: url('../images/contactBg.jpg'), #000;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;}
+
+header{
+  position: fixed;
+  z-index: 100;
+}
+  header .back{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+  }
+
+.main {
+  width: 100%;
+  height: 85%;
+  /*FLEX*/
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;}
+
+.panel{
+  cursor: default;
+  width: 200px;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  margin: auto;
+  text-align: center;
+  border-radius: 15px 50px;
+  display:none;}
+
+.email{
+  padding: 30px 2px;}
+
+.phone, .skype{
+  padding: 41px 2px;}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;}
+  footer .social{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;}
+
+.fb, .da, .in, .gh  {
+  display: none;
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;}
+ 
+.fb:hover, .da:hover, .gh:hover {
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+       -o-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);}
+
+@media screen and (max-width: 500px) {
+  .panel{
+    font-size: 1em;
+    height: 150px;}
+  .email{
+    padding: 12px 2px;
+  }
+  .phone, .skype{
+    padding: 17px;
+  }
+ }
