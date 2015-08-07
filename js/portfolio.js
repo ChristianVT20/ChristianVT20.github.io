@@ -53,8 +53,8 @@ function prototype1(target){
         $('.right-content .content-wrapper p').html('');
         $('.right-content .content-wrapper p').html('Web page prototype</br></br></br>');
         $('.right-content .content-wrapper ul').html('<li>HTML5</li><li>CSS3 / SASS</li><li>JavaScript</li><li>JQuery</li><li>Bootstrap</li><li>Flexbox</li>');
-        $(".right-content .resources .demo").html("<a href='#' target='_blank'><h4>DEMO</h4></a>");
-        $(".right-content .resources .code").html("<a href='#' target='_blank'><h4>CODE</h4></a>");
+        $(".right-content .resources .demo").html("<a href='http://christianvt20.github.io/aurora-prototype' target='_blank'><h4>DEMO</h4></a>");
+        $(".right-content .resources .code").html("<a href='https://github.com/ChristianVT20/aurora-prototype/tree/gh-pages' target='_blank'><h4>CODE</h4></a>");
       }
   });
 }
