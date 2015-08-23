@@ -95,7 +95,7 @@ hr {
 } 
 .educ_container{
   width: 50%;
-  height: 50%;
+  height: 60%;
   background: rgba(0,0,0,.6);
   color: white;
   -webkit-border-radius: 15px;
@@ -110,6 +110,7 @@ hr {
 .educ_container #content{
   padding: 30px 20px;
 }
+
 /*__________________________________ SKILLS _________________________________*/
 .skills {
 	background: url('../images/k.jpg');
@@ -155,32 +156,18 @@ hr {
   background-attachment: fixed;
 }
 .chart_container{
-  width: 70%;
-  height: 50%;
+  width: 50%;
+  height: 70%;
   background: rgba(0,0,0,.6);
   color: white;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
 
-  /* FLEX */
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
 }
 #title {
   width: 100%;
-  height: 20%;
-  padding: 0;
-  /*   FLEX   */
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  justify-content:center;
-  align-items:center;
+  padding: 20px 0 30px;
 }
 #title h1{
   padding:0;
@@ -188,45 +175,31 @@ hr {
   text-align: center;
   color: #5BC0DE;
 }
-.content-wrapper{
-  width: 100%;
-  height: 80%;
-    /* FLEX */
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  flex-direction:row;
-  justify-content:space-around;
-  align-items:space-around;
-}
-.content-wrapper #content1, .content-wrapper #content2{
-  padding: 30px;
-  height:100%;
-  width:50%;
-}
-.content-wrapper #content1 ul, .content-wrapper #content2 ul{
-  list-style: none;
-  padding:0;
-  margin:0;
-  height:100%;
-  width:100%;
 
-  /*   FLEX   */
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
+.panel-group{
+  padding: 5px;
+
 }
 
-.content-wrapper #content1 ul li, .content-wrapper #content2 ul li{
-  width:100%;
-  height:100%;
+.panel{
+  width: 80%;
+  background: rgba(0,0,0,0);
+  margin: auto;
+  color: #fff;
 }
-.progress-bar span{
-  font-size: 1.3em;
+.panel-heading{
+  text-align: center;
 }
+.panel-heading a  {
+  outline: 0;
+}
+.panel-body{
+  text-align: center;
+}
+.panel-group .panel-heading+.panel-collapse>.panel-body{
+  border: 1px solid #5BC0DE;
+}
+
 /*_______________________________ SOFT SKILLS _______________________________*/
 .soft_skills {
 	background: url('../images/p.jpg');
@@ -286,7 +259,7 @@ hr {
 }
 .contact_container #content{
   text-align:center;
-  padding: 40px 0;
+  padding: 40px 10px;
 }
 
 /*_________________________________ PANELS BASE _________________________________*/
@@ -307,18 +280,44 @@ hr {
 @media screen and (max-width: 845px){
   .educ_container{
     width: 80%;
-    height: 50%;
+    height: 60%;
   }
   .menu_label h3{
     font-size: 1.2em;
+  }
+  .chart_container{
+    width: 60%;
+  }
+  .soft_container{
+    width: 60%;
+    height: 50%;
+  }
+  .contact_container #title{
+    padding: 20px 10px;
+  }
+}
+
+@media screen and (max-width: 525px){
+  .educ_container{
+    width: 80%;
+    height: 70%;
+  }
+  .chart_container{
+    width: 80%;
+  }
+  .contact_container {
+    width: 60%;
   }
 }
 
 @media screen and (max-width: 449px){
   body {
-    font-size: 1em;
+    font-size: 13px;
   }
-  .educ_container, .contact_container, .skills_container,.soft_container{
+  .panel_container{
+    padding: 0;
+  }
+  .contact_container, .skills_container,.soft_container{
     width: 80%;
     height: 40%;
   }
@@ -326,4 +325,43 @@ hr {
     font-size: 2em;
   }
 
+  #menu{
+    left: -100px;
+  }
+
+  /*EDUCATION*/
+  .educ_container{
+    width: 90%;
+    height: 50%;
+  }
+
+  /*CHART*/
+  .chart_container{
+    width: 90%;
+  }
+  /*CONTACT*/
+  .contact_container {
+    height: 30%;
+  }
+
+  .contact_container #content, .soft_container #title,
+  .skills_container #content, .skills_container #title
+  .educ_container #content, .educ_container #title{
+    padding: 20px 10px;
+  }
+
+}
+
+@media screen and (max-width: 392px){
+  .educ_container{
+    width: 90%;
+    height: 60%;
+  }
+}
+
+@media screen and (max-width: 285px){
+  .educ_container{
+    width: 90%;
+    height: 70%;
+  }
 }
